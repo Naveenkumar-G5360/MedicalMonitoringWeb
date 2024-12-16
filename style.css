@@ -1,0 +1,464 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Ensure header elements wrap on small screens */
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: left; /* Align the title to the left */
+    flex: 1; /* Allow the title to take space but align it left */
+}
+
+
+.logo-image {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navbar li {
+    margin-left: 20px; /* Space between navigation items */
+}
+
+.navbar a {
+    display: inline-block; /* Make links block elements for padding */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; /* Base background color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Optional: Active Link Style */
+/* Add this to your MMW/style.css */
+
+/* Active Link Style */
+.navbar a.active {
+    background-color: #0056b3; /* Active link color */
+    color: #fff; /* Ensure text is white */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #e0e0e0; /* Light background for footer */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for spacing */
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%; /* Full width */
+}
+
+
+/* Section Styles */
+section {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section Styles */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.home-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.home-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section Styles */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.about-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mission-card,
+.customers-card,
+.vision-card,
+.what-we-do-card {
+    background-color: #e0f7fa;
+}
+
+.about-card h3 {
+    color: #007BFF;
+}
+
+.about-card p {
+    color: #555;
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+}
+
+.service-content {
+    padding: 15px;
+}
+
+.service-content h3 {
+    margin: 10px 0;
+    color: #007BFF;
+}
+
+.service-content p {
+    color: #555;
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+}
+
+.doctor-info {
+    padding: 15px;
+}
+
+.doctor-info h3 {
+    margin: 10px 0;
+    color: #007BFF;
+}
+
+.doctor-info p {
+    color: #555;
+}
+
+/* Mobile View - Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        width: 100%;
+    }
+
+    .navbar li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    .home-section,
+    .about-section {
+        flex-direction: column; /* Stack home and about sections */
+        align-items: center;
+    }
+
+    .home-content,
+    .about-content {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .home-images,
+    .about-images {
+        margin-top: 20px;
+    }
+
+    .about-cards-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .service-container {
+        justify-content: center;
+    }
+
+    .doctor-card,
+    .service-card,
+    .about-card {
+        width: 90%; /* Make cards take up more space on small screens */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.8em; /* Smaller title for very small screens */
+    }
+
+    .home-image {
+        width: 120px; /* Smaller images on mobile */
+    }
+
+    .doctor-card,
+    .service-card,
+    .about-card {
+        width: 100%; /* Full width cards on very small screens */
+    }
+}
+
+
+.contact-icons {
+    margin-top: 10px; /* Space above icons */
+}
+
+.contact-icon {
+    margin: 0 5px; /* Space between icons */
+}
+
+.icon {
+    width: 30px; /* Set width for icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+/* Add this to your MMW/style.css */
+
+/* General Section Styles */
+section {
+    padding: 20px; /* Padding for spacing */
+    background-color: #f9f9f9; /* Light background color for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Section Titles */
+h2 {
+    color: #007BFF; /* Blue color for section titles */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+/* Support Section Styles */
+.support-section a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.support-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Site Map Styles */
+.site-map-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.site-map-section li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.site-map-section a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.site-map-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #e0e0e0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+}
+
+/* Footer Links (if any) */
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px; /* Space between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* Slightly reduce padding for mobile */
+        text-align: center; /* Ensure center alignment */
+    }
+
+    /* Footer links stack on smaller screens */
+    .footer a {
+        display: block;
+        margin: 5px 0; /* Stack the links with space between */
+    }
+}
